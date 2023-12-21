@@ -1,6 +1,6 @@
 class Tag < ApplicationRecord
   validates :name, presence: true, uniqueness: true
 
-  has_many :restaurant_tags, dependent: :destroy
-  has_many :restaurants, through: :restaurant_tags
+  has_many :franchise_tags, dependent: :destroy
+  has_many :franchises, through: :franchise_tags
 end
